@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/resultsFragment">
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:label="@string/text_name_results"
+        android:name=""/>
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:label="@string/text_name_results"
+        android:name=""/>
+    <fragment
+        android:id="@+id/marathonFragment"
+        android:label="@string/text_name_results"
+        android:name=""/>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:label="@string/text_name_results"
+        android:name=""/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:label="@string/text_name_results"
+        android:name=""/>
+
+</navigation>

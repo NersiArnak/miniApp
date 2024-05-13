@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myResults"
+        android:checked="true"
+        android:icon="@drawable/ic_results"
+        android:title="Активность"/>
+
+    <item
+        android:id="@+id/training"
+        android:icon="@drawable/ic_training"
+        android:title="Тренировки"/>
+    <item
+        android:id="@+id/marathon"
+        android:icon="@drawable/ic_marathon"
+        android:title="Марафон"/>
+    <item
+        android:id="@+id/library"
+        android:icon="@drawable/ic_library"
+        android:title="Библиотека"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+</menu>
