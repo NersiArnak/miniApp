@@ -1,20 +1,50 @@
 package org.fitmyss.asfe
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat
+import androidx.navigation.NavOptions
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import org.fitmyss.asfe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+
+        window.statusBarColor = ContextCompat.getColor(this, R.color.blue)
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.blue)
+
+        val navController = findNavController(R.id.fragment_contant_main)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+
+        binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.myResults -> {
+                    navController.navigate(
+                        R.id.ResultsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.ResultsFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_results)
+                    true
+                }
+                else -> false
+            }
         }
     }
 }

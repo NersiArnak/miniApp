@@ -33,10 +33,21 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
+
 }
 
 dependencies {
-
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    //Easy adapter
+    implementation("ru.surfstudio.android:easyadapter:7.0.1")
+    implementation("ru.surfstudio.android:recycler-extension:0.5.0")
+    //Gson
+    implementation("com.google.code.gson:gson:2.8.9")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
