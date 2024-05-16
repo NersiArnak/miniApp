@@ -9,4 +9,14 @@
         android:label="@string/text_name_results"
         android:name="org.fitmyss.asfe.results.ResultsListFragment"/>
 
+    <fragment
+        android:id="@+id/TrainingsFragment"
+        android:label="Моя тренировки"
+        android:name="org.fitmyss.asfe.trainings.TrainingsListFragment"
+        />
+    <fragment
+        android:id="@+id/MarathonFragment"
+        android:label="Марафон"
+        android:name="org.fitmyss.asfe.marathon.MarathonListFragment"
+        />
 </navigation>

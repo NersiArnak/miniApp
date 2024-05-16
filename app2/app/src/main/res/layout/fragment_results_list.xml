@@ -51,7 +51,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/timer_img" />
+                        android:src="@drawable/stopwatch" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -94,6 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="0dp"
                 android:text="Тренируйтесь и делитесь результатом с друзьями"
                 android:textSize="17sp" />
 
@@ -142,6 +143,13 @@
                 android:text="История"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Последние тренировки"
+                android:textSize="17sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

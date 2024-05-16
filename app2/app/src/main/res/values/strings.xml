@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">My Fitness</string>
     <string name="text_name_results">Активность</string>
+    <string name="text_name_trainigs">Тренировки </string>
+    <string name="text_name_marathon">Марафон </string>
     <string name="place_holder_time">00:00:00</string>
 </resources>

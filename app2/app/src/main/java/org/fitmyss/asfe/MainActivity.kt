@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-
         window.statusBarColor = ContextCompat.getColor(this, R.color.blue)
         window.navigationBarColor = ContextCompat.getColor(this, R.color.blue)
 
@@ -41,10 +40,29 @@ class MainActivity : AppCompatActivity() {
                             .build()
                     )
                     binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_results)
-                    true
                 }
-                else -> false
+                R.id.training -> {
+                    navController.navigate(
+                        R.id.TrainingsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.TrainingsFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_trainigs)
+                }
+                R.id.marathon -> {
+                    navController.navigate(
+                        R.id.MarathonFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.MarathonFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_marathon)
+                }
             }
+            true
         }
     }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/part_payments_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:hint="Имя пользователя"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/blue"
+            android:hint="Моя тренировка"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/planTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/blue"
+            android:hint="Описание"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/aimTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/blue"
+            android:hint="Цель"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/blue"
+            android:hint="Время"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/blue"
+            android:text="Добавить"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</FrameLayout>
