@@ -61,6 +61,26 @@ class MainActivity : AppCompatActivity() {
                     )
                     binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_marathon)
                 }
+                R.id.library -> {
+                    navController.navigate(
+                        R.id.LibraryFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.LibraryFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_library)
+                }
+                R.id.settings -> {
+                    navController.navigate(
+                        R.id.SettingsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.SettingsFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_library)
+                }
             }
             true
         }

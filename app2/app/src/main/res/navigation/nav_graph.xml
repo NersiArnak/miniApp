@@ -19,4 +19,14 @@
         android:label="Марафон"
         android:name="org.fitmyss.asfe.marathon.MarathonListFragment"
         />
+    <fragment
+        android:id="@+id/LibraryFragment"
+        android:label="Библиотека"
+        android:name="org.fitmyss.asfe.library.LibraryListFragment"
+        />
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:label="Настройки"
+        android:name="org.fitmyss.asfe.settings.SettingsListFragment"
+    />
 </navigation>

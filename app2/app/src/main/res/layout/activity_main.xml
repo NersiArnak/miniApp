@@ -24,6 +24,7 @@
                 android:id="@+id/text_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/text_name_results"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/white"
                 android:textSize="25sp"

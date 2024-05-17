@@ -1,3 +1,4 @@
+
 package org.fitmyss.asfe.trainings
 
 import android.annotation.SuppressLint
@@ -7,10 +8,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.google.android.material.button.MaterialButton
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import org.fitmyss.asfe.R
 import org.fitmyss.asfe.TRAININGS
 import org.fitmyss.asfe.databinding.FragmentTrainingsListBinding
 import ru.surfstudio.android.easyadapter.EasyAdapter
@@ -24,7 +30,6 @@ class TrainingsListFragment : Fragment(), AddTrainingBottomSheetFragment.OnAddTr
     private val easyAdapter = EasyAdapter()
     private val trainingListItems = arrayListOf<TrainingListItem>()
     private val trainingListItemController = TrainingListItemController()
-
     private lateinit var pref: SharedPreferences
 
     override fun onCreateView(
@@ -33,16 +38,15 @@ class TrainingsListFragment : Fragment(), AddTrainingBottomSheetFragment.OnAddTr
     ): View {
         _binding = FragmentTrainingsListBinding.inflate(inflater, container, false)
         return binding.root
-    }
 
+    }
     @SuppressLint("CommitPrefEdits")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
         (activity as? AppCompatActivity)?.supportActionBar?.setDisplayShowHomeEnabled(false)
 
-        //сслыка на хранилище
+        // Ссылка на хранилище
         pref = requireContext().getSharedPreferences("trainingsList", Context.MODE_PRIVATE)
 
         val trainingListAdapter = binding.recyclerViewTrainingList
@@ -56,9 +60,10 @@ class TrainingsListFragment : Fragment(), AddTrainingBottomSheetFragment.OnAddTr
             trainingListItems.addAll(arrayList)
             easyAdapter.setItems(ItemList.create(arrayList, trainingListItemController))
         }
-
         buildAddButton()
+
     }
+
 
     private fun buildAddButton() {
         binding.addTrainingBtn.setOnClickListener {

@@ -8,9 +8,11 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import org.fitmyss.asfe.R
 import org.fitmyss.asfe.databinding.FragmentResultsListBinding
 import java.util.Date
@@ -23,7 +25,6 @@ class ResultsListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var pref: SharedPreferences
-
     private lateinit var dataHelper: DataHelper
     private val timer = Timer()
 
@@ -36,11 +37,19 @@ class ResultsListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        (activity as? AppCompatActivity)?.supportActionBar?.setDisplayShowHomeEnabled(false)
         super.onViewCreated(view, savedInstanceState)
         dataHelper = DataHelper(requireContext())
 
         binding.startButton.setOnClickListener { startStopAction() }
         binding.resetButton.setOnClickListener { resetAction() }
+        binding.buttonTraining.setOnClickListener {
+            findNavController().navigate(R.id.TrainingsFragment)
+        }
+        binding.buttonMarathon.setOnClickListener {
+            findNavController().navigate(R.id.MarathonFragment)
+        }
 
         if (dataHelper.timerCounting()) {
             startTimer(requireContext())
