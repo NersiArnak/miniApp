@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                             .setPopUpTo(R.id.SettingsFragment, true)
                             .build()
                     )
-                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_library)
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_settings)
                 }
             }
             true

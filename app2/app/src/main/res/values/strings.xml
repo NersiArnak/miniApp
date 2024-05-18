@@ -41,4 +41,10 @@
     <string name="target_tr">Цель:</string>
     <string name="time_tg">Время:</string>
     <string name="likes_tr">10 отметок нравится</string>
+    <string name="add_button_training">Добавить</string>
+    <string name="add_button_marathon">Добавить</string>
+    <string name="text_mini_marathon">Занимайтесь каждый день, чтобы достичь 100%</string>
+    <string name="important_text">Важное</string>
+    <string name="plan_text">План:</string>
+
 </resources>

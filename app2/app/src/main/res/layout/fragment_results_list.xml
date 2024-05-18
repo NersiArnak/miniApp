@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="20dp"
-                android:text="Важное"
+                android:text="@string/important_text"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
