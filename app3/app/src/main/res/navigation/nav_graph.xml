@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ResultsFragment">
+
+    <fragment
+        android:id="@+id/ResultsFragment"
+        android:label="@string/text_name_results"
+        android:name="com.fitsport.asfer.results.ResultsListFragment"
+        />
+
+    <fragment
+        android:id="@+id/NutritionFragment"
+        android:label="Питание"
+        android:name="com.fitsport.asfer.nutrition.NutritionListFragment"
+        />
+</navigation>

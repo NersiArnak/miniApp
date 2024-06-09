@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lionsmane">#FCF3E3</color>
+    <color name="grey">#e3e3e3</color>
+    <color name="herb">#409c51</color>
+    <color name="main_green">#01401b</color>
+    <color name="dark_grey">#696969</color>
+    <color name="grey2">#c7c7c7</color>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/results"
+        android:checked="true"
+        android:icon="@drawable/ic_results"
+        android:title="Главная"/>
+
+    <item
+        android:id="@+id/nutrition"
+        android:icon="@drawable/ic_nutrition"
+        android:title="Питание"/>
+    <item
+        android:id="@+id/recipes"
+        android:icon="@drawable/ic_recipes"
+        android:title="Рецепты"/>
+    <item
+        android:id="@+id/pedometer"
+        android:icon="@drawable/ic_pedometer"
+        android:title="шагомер"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+</menu>

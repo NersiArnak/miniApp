@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fit Sport</string>
+    <string name="text_name_results">Главная</string>
+    <string name="text_name_nutrition">Питание</string>
+    <string name="active_users_today">Активных пользователей сегодня</string>
+    <string name="name_user">Имя пользователя</string>
+</resources>

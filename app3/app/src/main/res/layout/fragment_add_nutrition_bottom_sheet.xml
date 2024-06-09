@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/part_payments_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_green"
+            android:hint="@string/name_user"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/main_green"
+            android:hint="Название диеты"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/morningNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/main_green"
+            android:hint="Утро"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dinnerNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/main_green"
+            android:hint="Обед"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/supperNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/main_green"
+            android:hint="Ужин"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/herb"
+            android:text="Добавить"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</FrameLayout>
