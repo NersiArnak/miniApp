@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.fitsport.asfer.R
 import com.fitsport.asfer.databinding.FragmentResultsListBinding
@@ -34,6 +35,8 @@ class ResultsListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        (activity as? AppCompatActivity)?.supportActionBar?.setDisplayShowHomeEnabled(false)
 
         pref = requireContext().getSharedPreferences("SurveyPrefs", Context.MODE_PRIVATE)
 

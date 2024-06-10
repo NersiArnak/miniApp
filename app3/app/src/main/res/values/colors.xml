@@ -8,5 +8,6 @@
     <color name="main_green">#01401b</color>
     <color name="dark_grey">#696969</color>
     <color name="grey2">#c7c7c7</color>
+    <color name="transparent">#00FFFFFF</color>
 
 </resources>

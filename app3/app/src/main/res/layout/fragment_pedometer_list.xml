@@ -3,16 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/stepsTextView"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/stepsGoalEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:hint="Введите цель шагов на сегодня"/>
+
+        <Button
+            android:id="@+id/saveStepsDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/transparent"
+            app:icon="@drawable/save"
+            app:iconTint="@color/black"
+            app:iconSize="38dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:text="Шагов: 0"
-        android:textSize="24sp"
-        />
+        android:src="@drawable/steps"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_pedometer">
+
+        <TextView
+            android:id="@+id/stepsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            android:text="Шагов: 0"
+            />
+
+    </LinearLayout>
+
 
 </LinearLayout>

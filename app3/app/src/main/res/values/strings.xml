@@ -4,6 +4,10 @@
     <string name="text_name_nutrition">Питание</string>
     <string name="text_name_library">Рецепты</string>
     <string name="text_name_pedometer">Шагомер</string>
+    <string name="text_name_settings">Настройки</string>
     <string name="active_users_today">Активных пользователей сегодня</string>
     <string name="name_user">Имя пользователя</string>
+    <string name="beginning_set">2000 кал</string>
+    <string name="average_set">1500 кал</string>
+    <string name="confident_set">800 кал</string>
 </resources>

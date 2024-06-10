@@ -16,7 +16,7 @@
         android:title="Рецепты"/>
     <item
         android:id="@+id/pedometer"
-        android:icon="@drawable/ic_pedometer"
+        android:icon="@drawable/ic_steps"
         android:title="Шагомер"/>
     <item
         android:id="@+id/settings"

@@ -71,6 +71,16 @@ class MainActivity : AppCompatActivity() {
                     )
                     binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_pedometer)
                 }
+                R.id.settings-> {
+                    navController.navigate(
+                        R.id.SettingsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.SettingsFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_pedometer)
+                }
             }
             true
         }

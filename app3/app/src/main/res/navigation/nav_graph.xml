@@ -25,4 +25,9 @@
         android:label="Рецепты"
         android:name="com.fitsport.asfer.pedometer.PedometerListFragment"
         />
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:label="Настройки"
+        android:name="com.fitsport.asfer.settings.SettingsListFragment"
+        />
 </navigation>
