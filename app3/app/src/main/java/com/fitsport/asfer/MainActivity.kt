@@ -51,6 +51,26 @@ class MainActivity : AppCompatActivity() {
                     )
                     binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_nutrition)
                 }
+                R.id.library-> {
+                    navController.navigate(
+                        R.id.LibraryFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.LibraryFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_library)
+                }
+                R.id.pedometer-> {
+                    navController.navigate(
+                        R.id.PedometerFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.PedometerFragment, true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.text_name_pedometer)
+                }
             }
             true
         }

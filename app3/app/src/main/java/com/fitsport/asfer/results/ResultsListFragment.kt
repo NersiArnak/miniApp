@@ -1,3 +1,5 @@
+package com.fitsport.asfer.results
+
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -80,7 +82,6 @@ class ResultsListFragment : Fragment() {
             editText?.setText(pref.getString("Answer_$id", ""))
         }
     }
-
     private fun showResults() {
         binding.questionContainer.visibility = View.GONE
         binding.completionText.visibility = View.VISIBLE

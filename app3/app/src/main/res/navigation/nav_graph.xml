@@ -15,4 +15,14 @@
         android:label="Питание"
         android:name="com.fitsport.asfer.nutrition.NutritionListFragment"
         />
+    <fragment
+        android:id="@+id/LibraryFragment"
+        android:label="Рецепты"
+        android:name="com.fitsport.asfer.library.LibraryListFragment"
+        />
+    <fragment
+        android:id="@+id/PedometerFragment"
+        android:label="Рецепты"
+        android:name="com.fitsport.asfer.pedometer.PedometerListFragment"
+        />
 </navigation>

@@ -1,6 +1,7 @@
 package com.fitsport.asfer
 
 import com.fitsport.asfer.nutrition.NutritionListItem
+import com.fitsport.asfer.library.LibraryListItem
 
 val NUTRITIONS = arrayListOf(
     NutritionListItem(
@@ -25,5 +26,28 @@ val NUTRITIONS = arrayListOf(
         supper = "Запеченный лосось с аспарагусом, картофельное пюре с чесноком, бокал красного вина, шоколадный мусс для десерта."
     )
 )
+
+val LIBRARY = arrayListOf(
+    LibraryListItem(
+        image = R.drawable.goi_cuon,
+        title = "Суши с криветками",
+        status = "Стритфуд",
+        description = "Суши с креветками: отварите рис для суши, охладите, смешайте с уксусом. На листья нори выложите рис, креветки, огурцы, авокадо. Сверните, нарежьте."
+    ),
+    LibraryListItem(
+        image = R.drawable.bibimbap,
+        title = "Пибимбап сербский",
+        status = "Для набора массы",
+        description = "Пибимбап сербский без мяса: смешайте отваренный рис с обжаренными овощами (помидоры, болгарский перец, спаржа), грибами, яйцом-пашот, добавьте желтый горох. Заправьте соевым соусом и посыпьте кунжутом."
+    ),
+    LibraryListItem(
+        image = R.drawable.soup,
+        title = "Суп грибной",
+        status = "Для похудения",
+        description = "Диетический грибной суп с помидорами: на воде обжарьте грибы, лук, морковь, добавьте томаты, зелень. Варите 20 мин., приправьте по вкусу."
+    ),
+)
+
+
 
 

@@ -33,6 +33,7 @@ class NutritionListFragment : Fragment(), AddNutritionBottomSheetFragment.OnAddN
     private val NutritionListItemController = NutritionListItemController()
     private lateinit var pref: SharedPreferences
 
+    private var count = 52987;
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -47,7 +48,6 @@ class NutritionListFragment : Fragment(), AddNutritionBottomSheetFragment.OnAddN
         (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
         (activity as? AppCompatActivity)?.supportActionBar?.setDisplayShowHomeEnabled(false)
 
-        // Ссылка на хранилище
         pref = requireContext().getSharedPreferences("NutritionsList", Context.MODE_PRIVATE)
 
         val NutritionListAdapter = binding.recyclerViewNutritionList
@@ -62,6 +62,15 @@ class NutritionListFragment : Fragment(), AddNutritionBottomSheetFragment.OnAddN
             easyAdapter.setItems(ItemList.create(arrayList, NutritionListItemController))
         }
         buildAddButton()
+
+        val countText: TextView = binding.nubmersActivityUsers
+        val countButton: Button = binding.buttonActibiteUsers
+
+        countButton.setOnClickListener{
+            count++
+            countText.text = count.toString()
+        }
+
 
 
     }

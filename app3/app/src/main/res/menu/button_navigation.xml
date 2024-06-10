@@ -11,13 +11,13 @@
         android:icon="@drawable/ic_nutrition"
         android:title="Питание"/>
     <item
-        android:id="@+id/recipes"
+        android:id="@+id/library"
         android:icon="@drawable/ic_recipes"
         android:title="Рецепты"/>
     <item
         android:id="@+id/pedometer"
         android:icon="@drawable/ic_pedometer"
-        android:title="шагомер"/>
+        android:title="Шагомер"/>
     <item
         android:id="@+id/settings"
         android:icon="@drawable/ic_settings"
