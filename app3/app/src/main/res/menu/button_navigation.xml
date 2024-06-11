@@ -4,22 +4,22 @@
         android:id="@+id/results"
         android:checked="true"
         android:icon="@drawable/ic_results"
-        android:title="Главная"/>
+        android:title="@string/main"/>
 
     <item
         android:id="@+id/nutrition"
         android:icon="@drawable/ic_nutrition"
-        android:title="Питание"/>
+        android:title="@string/nutrition"/>
     <item
         android:id="@+id/library"
         android:icon="@drawable/ic_recipes"
-        android:title="Рецепты"/>
+        android:title="@string/recipes"/>
     <item
         android:id="@+id/pedometer"
         android:icon="@drawable/ic_steps"
-        android:title="Шагомер"/>
+        android:title="@string/pedometer"/>
     <item
         android:id="@+id/settings"
         android:icon="@drawable/ic_settings"
-        android:title="Настройки" />
+        android:title="@string/settings" />
 </menu>

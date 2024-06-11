@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="22sp"
-        android:hint="Введите цель шагов на сегодня"/>
+        android:hint="@string/main_text_pedometer"/>
 
         <Button
             android:id="@+id/saveStepsDay"
@@ -58,7 +58,7 @@
             android:textStyle="bold"
             android:textSize="34sp"
             android:textColor="@color/white"
-            android:text="Шагов: 0"
+            android:text="@string/number_of_steps"
             />
 
     </LinearLayout>

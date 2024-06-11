@@ -40,7 +40,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="52987"/>
+                    android:text="@string/number_of_users"/>
 
                 <TextView
                     android:id="@+id/textActiviteUsers"
@@ -49,7 +49,7 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="5dp"
-                    android:textSize="17sp"
+                    android:textSize="15sp"
                     android:textColor="@color/white"
                     android:text="@string/active_users_today"/>
                 <Button
@@ -60,7 +60,7 @@
                     android:layout_gravity="center"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/herb"
-                    android:text="Нажми" />
+                    android:text="@string/click" />
 
             </LinearLayout>
 
@@ -96,7 +96,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/button_add_background"
         android:paddingBottom="2dp"
-        android:text="+"
+        android:text="@string/plus"
         android:textSize="36sp"
         android:textColor="@color/herb"
         app:layout_constraintBottom_toBottomOf="parent"

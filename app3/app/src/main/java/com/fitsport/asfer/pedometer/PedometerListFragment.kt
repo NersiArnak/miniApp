@@ -20,7 +20,7 @@ class PedometerListFragment : Fragment(), SensorEventListener {
     private var stepsCount = 0
     private var binding: FragmentPedometerListBinding? = null
 
-    private val STRONG_MOVEMENT_THRESHOLD = 10.0f
+    private val STRONG_MOVEMENT_THRESHOLD = 30.0f
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

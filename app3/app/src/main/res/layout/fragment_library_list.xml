@@ -30,11 +30,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:paddingHorizontal="16dp"
-
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Выберите фильтр для поиска:"/>
+                    android:text="@string/main_text_library"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -58,7 +57,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16dp"
-                                android:text="Для набора массы"
+                                android:text="@string/weight_text"
                                 android:textColor="@color/white" />
 
                             <RadioButton
@@ -66,7 +65,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16dp"
-                                android:text="Для похудения"
+                                android:text="@string/loss_text"
                                 android:textColor="@color/white" />
 
 
@@ -76,7 +75,7 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16dp"
 
-                                android:text="Стритфуд"
+                                android:text="@string/street_food"
                                 android:textColor="@color/white" />
 
                             <RadioButton
@@ -84,7 +83,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="16dp"
-                                android:text="Все"
+                                android:text="@string/all"
                                 android:checked="true"
                                 android:textColor="@color/white" />
 

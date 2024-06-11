@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textColor="@color/main_green"
-            android:hint="Название диеты"/>
+            android:hint="@string/name_dieе"/>
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textColor="@color/main_green"
-            android:hint="Утро"/>
+            android:hint="@string/morning"/>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/dinnerNutrition"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textColor="@color/main_green"
-            android:hint="Обед"/>
+            android:hint="@string/dinner"/>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/supperNutrition"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textColor="@color/main_green"
-            android:hint="Ужин"/>
+            android:hint="@string/supper"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addNutrition"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@color/herb"
-            android:text="Добавить"
+            android:text="@string/add"
             android:textColor="@color/white"/>
 
     </LinearLayout>
